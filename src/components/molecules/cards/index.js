@@ -5,7 +5,7 @@ import { Bintang } from '../../../assets';
 const Cards = ({image,content,recomenation}) => {
     return (
         <div className="card shadow-sm p-3 mb-5 bg-white rounded ">
-            <img src={image} className="card-top" alt="" id="images"/>
+            <img src={image} className="card-top" aria-hidden alt="Picture of me taking a photo of an image" id="images"/>
             <div className="card-body">
                 <p className="card-text text-center">{content}</p>
                 <p className="card-text text-center">{recomenation}</p>
