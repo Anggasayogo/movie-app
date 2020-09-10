@@ -2,17 +2,17 @@ import React from 'react'
 import "./card.css";
 import { Bintang } from '../../../assets';
 
-const Cards = ({image,content,recomenation}) => {
+const Cards = ({hero,content,recomenation}) => {
     return (
         <div className="card shadow-sm p-3 mb-5 bg-white rounded ">
-            <img src={image} className="card-top" aria-hidden alt="Picture of me taking a photo of an image" id="images"/>
+            <img src={hero}  className="card-top" alt="Hero" id="hero"/>
             <div className="card-body">
                 <p className="card-text text-center">{content}</p>
                 <p className="card-text text-center">{recomenation}</p>
-                <img src={Bintang} id="bintang"/>
-                <img src={Bintang} id="bintang"/>
-                <img src={Bintang} id="bintang"/>
-                <img src={Bintang} id="bintang"/>
+                <img src={Bintang} alt="bintang" id="bintang"/>
+                <img src={Bintang} alt="bintang" id="bintang"/>
+                <img src={Bintang} alt="bintang" id="bintang"/>
+                <img src={Bintang} alt="bintang" id="bintang"/>
             </div>
         </div>
     )

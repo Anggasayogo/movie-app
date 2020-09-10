@@ -26,9 +26,9 @@ const Home = () => {
             <Gap height={100}/>
             <div className="row">
                 {loading && 
-                    berita.map((e)=>{
+                    berita.map((e,i)=>{
                         return(
-                            <div className="col-md-3">
+                            <div key={i} className="col-md-3">
                                 <SkeletonCard/>
                             </div>
                         )
@@ -38,7 +38,7 @@ const Home = () => {
                     berita.map((e,i)=>{
                         return(
                             <div key={i} className="col-md-3">
-                                <Cards image={e.image_url} content={e.title} recomenation={e.recommendation_url}/>
+                                <Cards hero={e.image_url} content={e.title} recomenation={e.recommendation_url}/>
                             </div>
                         )
                     })
