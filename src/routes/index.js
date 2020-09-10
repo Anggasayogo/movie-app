@@ -18,7 +18,7 @@ const Routes = () => {
                                 <Link className="nav-link active" aria-current="page" to="/register"></Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link active" aria-current="page" to="/update">Update</Link>
+                                <Link className="nav-link active" aria-current="page" to="/about">About Us</Link>
                             </li>
                         </ul>
                     </div>
